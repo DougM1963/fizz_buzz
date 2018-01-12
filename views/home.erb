@@ -1,0 +1,28 @@
+<head>
+<title>Doug`s FizzBuzz</title>
+<link href="<%= url('/css/style.css') %>" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<center>
+<div class="fizz">
+<br>
+Welcome to Doug`s FizzBuzz
+<br>
+<div class="buzz">
+<% 
+$fizzbuzz_array = []
+counter = 1
+100. times do
+	fizzbuzz(counter)
+	counter = counter + 1 
+end
+	%>
+	<%= $fizzbuzz_array %>
+	<br>
+	<br>
+<img alt="fizzbuzz" src="/img/fizzbuzz.png" width="400" height="400" />
+<br>
+Hope you enjoy the FizzBuzz
+</div>
+</center>
+</body>
